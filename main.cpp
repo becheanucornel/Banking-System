@@ -49,10 +49,8 @@ int main()
                 break;
         }
     }while(choice!=4);
-
-
-
 }
+
 bool Verification(double ammount)
 {
     if(ammount<0)
@@ -61,6 +59,7 @@ bool Verification(double ammount)
     }
     return true;
 }
+
 bool FoundsVerification(double balance, double ammount)
 {
     if(balance < ammount)
@@ -74,6 +73,7 @@ void ShowBalance(double balance)
 {
     std::cout << "Your balance is: $" << std::setprecision(2) << std::fixed << balance << "\n";
 }
+
 double Deposit()
 {
     double ammount = 0;
@@ -89,6 +89,7 @@ double Deposit()
         return 0;
     }
 }
+
 double Withdraw(double balance)
 {
     double ammount = 0;
